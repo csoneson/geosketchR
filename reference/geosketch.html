@@ -17,7 +17,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">sketchR</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.99.3</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.1.0</span>
       </span>
     </div>
 
@@ -71,48 +71,48 @@
 
     <div id="arguments">
     <h2>Arguments</h2>
-    <dl><dt>mat</dt>
+    <dl><dt id="arg-mat">mat<a class="anchor" aria-label="anchor" href="#arg-mat"></a></dt>
 <dd><p>m x n matrix. Samples (the dimension along which to subsample)
 should be in the rows, features in the columns.</p></dd>
 
 
-<dt>N</dt>
+<dt id="arg-n">N<a class="anchor" aria-label="anchor" href="#arg-n"></a></dt>
 <dd><p>Numeric scalar, the number of samples to retain.</p></dd>
 
 
-<dt>replace</dt>
+<dt id="arg-replace">replace<a class="anchor" aria-label="anchor" href="#arg-replace"></a></dt>
 <dd><p>Logical scalar, whether to sample with replacement.</p></dd>
 
 
-<dt>k</dt>
+<dt id="arg-k">k<a class="anchor" aria-label="anchor" href="#arg-k"></a></dt>
 <dd><p>Numeric scalar or <code>"auto"</code>, specifying the number of covering.
 If <code>k = "auto"</code> (the default), it is set to <code>sqrt(nrow(mat))</code>
 for <code>replace = TRUE</code> and to <code>N</code> for <code>replace = FALSE</code>.</p></dd>
 
 
-<dt>alpha</dt>
+<dt id="arg-alpha">alpha<a class="anchor" aria-label="anchor" href="#arg-alpha"></a></dt>
 <dd><p>Numeric scalar defining the acceptable interval around <code>k</code>.
 Binary search halts when it obtains between <code>k * (1 - alpha)</code> and
 <code>k * (1 + alpha)</code> covering boxes.</p></dd>
 
 
-<dt>seed</dt>
+<dt id="arg-seed">seed<a class="anchor" aria-label="anchor" href="#arg-seed"></a></dt>
 <dd><p>Numeric scalar or <code>NULL</code> (default). If not <code>NULL</code>, it
 will be converted to integer and passed to numpy to seed the random
 number generator.</p></dd>
 
 
-<dt>max_iter</dt>
+<dt id="arg-max-iter">max_iter<a class="anchor" aria-label="anchor" href="#arg-max-iter"></a></dt>
 <dd><p>Numeric scalar giving the maximum iterations at which to
 terminate binary search in rare cases of non-monotonicity of covering
 boxes.</p></dd>
 
 
-<dt>one_indexed</dt>
+<dt id="arg-one-indexed">one_indexed<a class="anchor" aria-label="anchor" href="#arg-one-indexed"></a></dt>
 <dd><p>Logical scalar, whether to return one-indexed indices.</p></dd>
 
 
-<dt>verbose</dt>
+<dt id="arg-verbose">verbose<a class="anchor" aria-label="anchor" href="#arg-verbose"></a></dt>
 <dd><p>Locigal scalar, whether to print logging output while running.</p></dd>
 
 </dl></div>
@@ -159,7 +159,7 @@ single-cell transcriptomic landscape. Cell Systems 8, 483–493.</p>
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.9000.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.9.9000.</p>
 </div>
 
       </footer></div>
