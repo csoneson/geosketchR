@@ -6,8 +6,6 @@ set.seed."><!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/m
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]--></head><body data-spy="scroll" data-target="#toc">
-    
-
     <div class="container template-reference-topic">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -23,7 +21,6 @@ set.seed."><!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/m
         <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.1.0</span>
       </span>
     </div>
-
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav"><li>
   <a href="../articles/sketchR.html">Get started</a>
@@ -37,15 +34,11 @@ set.seed."><!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/m
       </ul><ul class="nav navbar-nav navbar-right"><li>
   <a href="https://github.com/fmicompbio/sketchR/" class="external-link">
     <span class="fab fa-github fa-lg"></span>
-     
   </a>
 </li>
       </ul></div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
-
-      
-
       </header><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
@@ -53,14 +46,12 @@ set.seed."><!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/m
     <small class="dont-index">Source: <a href="https://github.com/fmicompbio/sketchR/blob/HEAD/R/hausdorffDistPlot.R" class="external-link"><code>R/hausdorffDistPlot.R</code></a></small>
     <div class="hidden name"><code>hausdorffDistPlot.Rd</code></div>
     </div>
-
     <div class="ref-description">
     <p>Create diagnostic plot showing the Hausdorff distance between a sketch
 and the full data set, for varying sketch sizes. For reproducibility,
 seed the random number generator before calling this function using
 <code>set.seed</code>.</p>
     </div>
-
     <div id="ref-usage">
     <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">hausdorffDistPlot</span><span class="op">(</span></span>
 <span>  <span class="va">mat</span>,</span>
@@ -71,37 +62,26 @@ seed the random number generator before calling this function using
 <span>  extraArgs <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="op">)</span></span></code></pre></div>
     </div>
-
     <div id="arguments">
     <h2>Arguments</h2>
     <dl><dt id="arg-mat">mat<a class="anchor" aria-label="anchor" href="#arg-mat"></a></dt>
 <dd><p>m x n matrix. Samples (the dimension along which to subsample)
 should be in the rows, features in the columns.</p></dd>
-
-
 <dt id="arg-nvec">Nvec<a class="anchor" aria-label="anchor" href="#arg-nvec"></a></dt>
 <dd><p>Numeric vector of sketch sizes.</p></dd>
-
-
 <dt id="arg-nrep">Nrep<a class="anchor" aria-label="anchor" href="#arg-nrep"></a></dt>
 <dd><p>Numeric scalar indicating the number of sketches to draw
 for each sketch size.</p></dd>
-
-
 <dt id="arg-q">q<a class="anchor" aria-label="anchor" href="#arg-q"></a></dt>
 <dd><p>Numeric scalar in [0,1], indicating the fraction of largest
 minimum distances to discard when calculating the robust Hausdorff
 distance. Setting q=0 gives the classical Hausdorff distance.
 The default is 1e-4, as suggested by Hie et al (2019).</p></dd>
-
-
 <dt id="arg-methods">methods<a class="anchor" aria-label="anchor" href="#arg-methods"></a></dt>
 <dd><p>Character vector, indicating which method(s) to include
 in the plot. Should be a subset of c("geosketch", "scsampler",
 "uniform"), where "uniform" randomly samples from input features
 with uniform probabilities.</p></dd>
-
-
 <dt id="arg-extraargs">extraArgs<a class="anchor" aria-label="anchor" href="#arg-extraargs"></a></dt>
 <dd><p>Named list providing extra arguments to the respective
 methods (beyond the matrix and the sketch size). The names of the list
@@ -111,12 +91,9 @@ the examples for an illustration of how to use this argument. Note that
 the <code>seed</code> argument, if provided to any of the methods,
 will be ignored (since it would imply providing the same seed for each
 repeated run of the sketching).</p></dd>
-
 </dl></div>
     <div id="value">
     <h2>Value</h2>
-    
-
 <p>A <code>ggplot</code> object.</p>
     </div>
     <div id="references">
@@ -134,7 +111,6 @@ Intelligence 15(9), 850-863.</p>
     <h2>Author</h2>
     <p>Charlotte Soneson, Michael Stadler</p>
     </div>
-
     <div id="ref-examples">
     <h2>Examples</h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co">## Generate example data matrix</span></span></span>
@@ -157,22 +133,12 @@ Intelligence 15(9), 850-863.</p>
     <nav id="toc" data-toggle="toc" class="sticky-top"><h2 data-toc-skip>Contents</h2>
     </nav></div>
 </div>
-
-
       <footer><div class="copyright">
   <p></p><p>Developed by Charlotte Soneson, Michael Stadler.</p>
 </div>
-
 <div class="pkgdown">
   <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.9.9000.</p>
 </div>
-
       </footer></div>
-
-  
-
-
-  
-
   </body></html>
 
