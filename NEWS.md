@@ -1,3 +1,7 @@
+# sketchR 1.1.1
+
+* Update environments to adapt to basilisk conda update
+
 # sketchR 0.99.2
 
 * Version bump to trigger new SPB build, no changes

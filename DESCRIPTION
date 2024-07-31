@@ -1,6 +1,6 @@
 Package: sketchR
-Version: 1.1.0
-Date: 2024-02-22
+Version: 1.1.1
+Date: 2024-07-31
 Title: An R interface for python subsampling/sketching algorithms
 Authors@R: c(
     person("Charlotte", "Soneson", email = "charlottesoneson@gmail.com",
@@ -43,7 +43,7 @@ Suggests:
     SingleCellExperiment
 URL: https://github.com/fmicompbio/sketchR
 BugReports: https://github.com/fmicompbio/sketchR/issues
-RoxygenNote: 7.3.1
+RoxygenNote: 7.3.2
 Encoding: UTF-8
 StagedInstall: no
 Config/testthat/edition: 3
