@@ -1,3 +1,7 @@
+# sketchR 1.1.2
+
+* Specify Linux aarch environment
+
 # sketchR 1.1.1
 
 * Update environments to adapt to basilisk conda update
