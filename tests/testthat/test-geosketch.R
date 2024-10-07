@@ -50,6 +50,16 @@ test_that("geosketch works", {
     expect_length(is1, n)
     expect_length(is2, n)
 
+    expect_equal(id1, c(49, 248, 287, 433, 487, 615, 651, 702, 704, 843))
+    expect_equal(id2, c(37, 46, 49, 253, 615, 651, 829, 838, 841, 843))
+    expect_equal(id3, c(39, 54, 56, 79, 147, 171, 196, 312, 355, 474, 492,
+                        578, 620, 629, 651, 704, 739, 841, 920, 979))
+    expect_equal(id4, c(16, 39, 147, 178, 248, 295, 312, 364, 416, 433, 440,
+                        492, 615, 702, 729, 770, 828, 920, 979, 982))
+    expect_equal(id5, c(49, 54, 107, 253, 274, 290, 331, 615, 651, 849))
+
+    expect_false(all(id1 == id2))
+
     expect_identical(id1, is1)
     expect_identical(id2, is2)
     expect_identical(id5, id6)
