@@ -1,3 +1,7 @@
+# sketchR 1.1.3
+
+* Update environment to avoid setuptools incompatibility
+
 # sketchR 1.1.2
 
 * Specify Linux aarch environment
